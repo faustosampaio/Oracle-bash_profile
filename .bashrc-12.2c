@@ -1,0 +1,25 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+umask 0022
+ORACLE_HOME=/u01/app/oracle/product/12.2.0/dbhome_1; export ORACLE_HOME
+OH=/u01/app/oracle/product/12.2.0/dbhome_1; export OH
+ORACLE_UNQNAME=cdb1; export ORACLE_UNQNAME
+ORACLE_HOSTNAME=oem-ssd; export ORACLE_HOSTNAME
+ORACLE_BASE=/u01/app/oracle; export ORACLE_BASE
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/u01/app/oracle/product/12.2.0/dbhome_1/bin:/u01/app/oracle/product/12.2.0/dbhome_1/OPatch; export PATH
+LD_LIBRARY_PATH=/u01/app/oracle/product/12.2.0/dbhome_1/lib; export LD_LIBRARY_PATH
+TNS_ADMIN=/u01/app/oracle/product/12.2.0/dbhome_1/network/admin; export TNS_ADMIN
+ORACLE_SID=cdb1; export ORACLE_SID
+TFA_HOME=/var/opt/oracle/tfa; export TFA_HOME
+
+#OEM
+
+export OMS_HOME=/u01/app/oracle/middleware
+export AGENT_HOME=/u01/app/oracle/agent/agent_inst
